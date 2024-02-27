@@ -10,7 +10,24 @@ document.addEventListener('DOMContentLoaded', function () {
         if (code !== lastResult) {
             lastResult = code;
             resultContainer.innerHTML = 'Barcode: ' + code;
-            alert('Barcode: ' + code);
+            alert('Barcode detected: ' + code);
+
+            // Send the barcode to the backend
+            fetch('/check-barcode', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ barcode: code }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                    // You can handle the response here, e.g., display it on the page
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
         }
     }
 
