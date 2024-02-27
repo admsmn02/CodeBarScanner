@@ -26,11 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
             // if the code is in the products array
             var product = products.find(p => p.barcode === code);
             if (product) {
-                console.log('Product found', product.name);
+                alert('Product find, ' + product.name + ' ' + product.price + ' ' + product.description)
             } else {
                 alert('This barcode is not available');
             }
-            alert('Barcode: ' + code);
         }
     }
 
