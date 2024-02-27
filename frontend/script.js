@@ -1,5 +1,5 @@
 const products = [
-    { barcode: '061300873772', name: 'Product  1', price: 10.99, description: 'Bouteille test' },
+    { barcode: '0613008730772', name: 'Product  1', price: 10.99, description: 'Bouteille test' },
     { barcode: '234567890123', name: 'Product  2', price: 15.99, description: 'This is product  2' },
     { barcode: '345678901234', name: 'Product  3', price: 20.99, description: 'This is product  3' },
     { barcode: '456789012345', name: 'Product  4', price: 25.99, description: 'This is product  4' },
