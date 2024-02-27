@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (code !== lastResult) {
             lastResult = code;
             resultContainer.innerHTML = 'Barcode: ' + code;
+            alert('Barcode: ' + code);
         }
     }
 
