@@ -5,17 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barcode Scanner</title>
+    <script src="https://cdn.jsdelivr.net/npm/quagga@0.12.1/dist/quagga.min.js"></script>
 </head>
 
 <body>
     <div id="interactive" class="viewport"></div>
-    <button id="startButton">Start</button>
-    <button id="stopButton">Stop</button>
-    <p id="barcodeResult"></p>
-    <video id="videoElement" autoplay playsinline></video>
-
-    <!-- Include ZXing library -->
-    <script src="https://unpkg.com/@zxing/library@0.18.4/umd/index.min.js"></script>
+    <p id="barcode-result"></p>
     <script src="script.js"></script>
 </body>
 
